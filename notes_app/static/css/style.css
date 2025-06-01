@@ -1,0 +1,102 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h2 {
+    color: #333;
+}
+
+#note-form div {
+    margin-bottom: 10px;
+}
+
+#note-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#note-form input[type="text"],
+#note-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Important for width 100% */
+}
+
+#note-form button {
+    background: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+#note-form button:hover {
+    background: #4cae4c;
+}
+
+#notes-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#notes-list li {
+    background: #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #5cb85c;
+}
+
+#notes-list li h3 { /* Title of the note */
+    margin-top: 0;
+}
+
+#notes-list li .actions button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#notes-list li .actions .delete-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+}
+#notes-list li .actions .share-btn {
+    background-color: #0275d8;
+    color: white;
+    border: none;
+}

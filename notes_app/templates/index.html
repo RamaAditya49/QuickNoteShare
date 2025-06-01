@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Notes App{% endblock %}
+
+{% block content %}
+<section id="create-note">
+    <h2>Create New Note</h2>
+    <form id="note-form">
+        <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div>
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" required></textarea>
+        </div>
+        <button type="submit">Add Note</button>
+    </form>
+</section>
+
+<section id="notes-list">
+    <h2>My Notes</h2>
+    <ul id="notes">
+        <!-- Notes will be loaded here by JavaScript -->
+        <li>Loading notes...</li>
+    </ul>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+{% endblock %}
