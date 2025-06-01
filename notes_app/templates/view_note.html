@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}View Note{% endblock %}
+
+{% block content %}
+<section id="shared-note-view">
+    <h2 id="note-title">Loading title...</h2>
+    <p id="note-content">Loading content...</p>
+    <small id="note-shared-at">Shared on: Loading date...</small>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/view.js') }}"></script>
+{% endblock %}
