@@ -69,7 +69,7 @@ Follow these steps to get the Notes App running on your local machine.
 
 **2. Clone the Repository:**
 ```bash
-git clone <repository_url>  # Replace <repository_url> with the actual URL
+git clone https://github.com/RamaAditya49/QuickNoteShare
 cd notes-app-project-directory # Navigate to the project directory
 ```
 
